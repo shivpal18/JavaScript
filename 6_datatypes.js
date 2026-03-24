@@ -19,3 +19,14 @@ const bigInt = 123456534735242n
 // Reference (Non-Primitive) 
 
 // Array, Objects, Functions
+
+const heros = ["Shaktiman", "naagraj", "avengers"];
+
+let myObj = {
+    name: "hitesh",
+    age: 22,
+}
+
+const myFunction = function() {
+    console.log("Hello World");
+}
