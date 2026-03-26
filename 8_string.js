@@ -20,3 +20,14 @@ console.log(newString);
 
 const anotherString = gameName.slice(-7, 4);
 console.log(anotherString);
+
+const newStringOne = "   Shivpal   "
+console.log(newStringOne);
+console.log(newStringOne.trim());
+
+const url = "https://shivpal.com/shivpal%20chaurasiya"
+console.log(url.replace('%20', '-'));
+console.log(url.includes('shivpal'));
+
+console.log(gameName.split('-'));
+    
