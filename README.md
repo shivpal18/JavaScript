@@ -1,0 +1,9 @@
+# 🚀 My JavaScript Projects
+
+## 🔗 Live Projects
+
+👉 https://shivpal18.github.io/JavaScript/07_Projects/
+
+## 📁 Projects Included
+- Project01
+- Project02
