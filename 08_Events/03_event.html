@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Events</title>
+</head>
+<body>
+    <h2>Interval Events in JS</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = function(){
+        console.log("Hi", Date.now());
+    }
+
+    let intervalId = null;
+
+    // START button
+    document.querySelector('#start').addEventListener('click', function(){
+        if(intervalId === null){
+            intervalId = setInterval(sayDate, 1000);
+        }
+    });
+
+    // STOP button
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId);
+        intervalId = null;
+    });
+</script>
+</html>
