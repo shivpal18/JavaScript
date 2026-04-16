@@ -21,7 +21,6 @@ function User(username, loginCount, signedIn){
 
     this.greeting = function(){
         console.log(`Welcome ${this.username}`);
-        
     }
     return this
 }
