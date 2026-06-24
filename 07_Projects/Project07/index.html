@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="dd.png" alt="Gym Logo" class="logo-image" style="height: 70px;
+            width: 80px;">
+            Gym Fitness Club
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <center><h1>Welcome to Gym Fitness Club</h1></center>
+    
+    <section id="home" class="hero">
+       
+        <img src="https://plus.unsplash.com/premium_photo-1661265933107-85a5dbd815af?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltfGVufDB8fDB8fHww" style="width: 1200px ; height: 550px;">
+       
+        <p>Your ultimate destination for fitness and health.</p>
+        <button onclick="joinNow()">Join Now</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="images/personal-training.jpg" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>One-on-one sessions with certified trainers to meet your goals.</p>
+            </div>
+            <div class="service">
+                <img src="images/yoga-classes.jpg" alt="Yoga Classes">
+                <h3>Yoga Classes</h3>
+                <p>Relax and strengthen your mind and body through yoga.</p>
+            </div>
+            <div class="service">
+                <img src="images/cardio-equipment.jpg" alt="Cardio Equipment">
+                <h3>Cardio Equipment</h3>
+                <p>State-of-the-art machines to improve your endurance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership">
+        <h2>Membership Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <img src="images/basic-plan.jpg" alt="Basic Plan">
+                <h3>Basic Plan</h3>
+                <p>$25/month</p>
+                <p>Access to gym equipment during working hours.</p>
+                <button onclick="choosePlan('Basic Plan')">Choose Plan</button>
+            </div>
+            <div class="plan">
+                <img src="images/standard-plan.jpg" alt="Standard Plan">
+                <h3>Standard Plan</h3>
+                <p>$40/month</p>
+                <p>Includes classes and extended hours.</p>
+                <button onclick="choosePlan('Standard Plan')">Choose Plan</button>
+            </div>
+            <div class="plan">
+                <img src="images/premium-plan.jpg" alt="Premium Plan">
+                <h3>Premium Plan</h3>
+                <p>$60/month</p>
+                <p>24/7 access and personal training sessions.</p>
+                <button onclick="choosePlan('Premium Plan')">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Gym Fitness Club. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
